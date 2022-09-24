@@ -9,6 +9,6 @@ Prodi : D4 Teknik Informatika <br>
 
 ## Hasil Praktikum
 
-![image](public/images/code_lana_test.PNG)
+![image](images/code_lana_test.png)
 <br>
-![image](assets/images/web_lana_crud.PNG)
+![image](images/web_lana_crud.png)
