@@ -16,7 +16,7 @@ Prodi : D4 Teknik Informatika <br>
 ![image](images/view.png)
 <br>
 ![image](images/delete.png)
-
+<br>
 # Pengujian White Box Testing
 
 ## Hasil Praktikum
