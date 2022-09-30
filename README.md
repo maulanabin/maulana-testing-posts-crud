@@ -11,7 +11,7 @@ Prodi : D4 Teknik Informatika <br>
 
 ![image](images/create.png)
 <br>
-![image](images/edit.png)
+![image](images/update.png)
 <br>
 ![image](images/view.png)
 <br>
