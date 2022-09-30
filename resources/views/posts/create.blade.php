@@ -40,7 +40,7 @@
                             <div class="form-group">
                                 <label for="title">Title</label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror"
-                                    name="title" value="{{ old('title') }}" required>
+                                    name="title" id="title" value="{{ old('title') }}" required>
 
                                 <!-- error message untuk title -->
                                 @error('title')
@@ -52,7 +52,7 @@
 
                             <div class="form-group">
                                 <label for="status">Publish Status</label>
-                                <select name="status" class="form-control" required>
+                                <select name="status" id="status" class="form-control" required>
                                     <option value="1" selected>Publish</option>
                                     <option value="0">Draft</option>
                                 </select>
@@ -60,7 +60,7 @@
 
                             <div class="form-group">
                                 <label for="content">Content</label>
-                                <textarea name="content" id="content"
+                                <textarea name="content" id="content-posts"
                                     class="form-control @error('content') is-invalid @enderror" rows="5"
                                     required>{{ old('content') }}</textarea>
 
@@ -72,7 +72,7 @@
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-md btn-primary">Save</button>
+                            <button type="submit" class="btn btn-md btn-primary" id="save">Save</button>
                             <a href="{{ route('post.index') }}" class="btn btn-md btn-secondary">back</a>
 
                         </form>
