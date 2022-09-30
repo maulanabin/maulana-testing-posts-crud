@@ -46,7 +46,7 @@
                             </div>
 
                             <a href="{{ route('post.edit', $post->id) }}" class="btn btn-md btn-primary">Edit Post</a>
-                            <a href="{{ route('post.index') }}" class="btn btn-md btn-secondary">back</a>
+                            <a href="{{ route('post.index') }}" class="btn btn-md btn-secondary" id="back">back</a>
                         </form>
                     </div>
                 </div>
