@@ -52,7 +52,7 @@
 
                             <div class="form-group">
                                 <label for="status">Publish Status</label>
-                                <select name="status" class="form-control" required>
+                                <select name="status" id="status" class="form-control" required>
                                     <option value="1" {{ $post->status == 1 ? 'selected':'' }}>Publish</option>
                                     <option value="0" {{ $post->status == 0 ? 'selected':'' }}>Draft</option>
                                 </select>
@@ -60,7 +60,7 @@
 
                             <div class="form-group">
                                 <label for="content">Content</label>
-                                <textarea name="content" id="content"
+                                <textarea name="content" id="content-posts"
                                     class="form-control @error('content') is-invalid @enderror" name="content"
                                     id="content" rows="5" required>{{ old('content', $post->content) }}</textarea>
 
@@ -72,7 +72,7 @@
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-md btn-primary">Update</button>
+                            <button type="submit" class="btn btn-md btn-primary" id="update">Update</button>
                             <a href="{{ route('post.index') }}" class="btn btn-md btn-secondary">back</a>
                         </form>
                     </div>
