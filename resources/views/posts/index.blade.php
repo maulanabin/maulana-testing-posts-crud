@@ -54,7 +54,7 @@
 
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                           action="{{ route('post.destroy', $post->id) }}" method="POST">
-                                        <a href="{{ route('post.show', $post->id) }}" class="btn btn-sm btn-primary">view</a>
+                                        <a href="{{ route('post.show', $post->id) }}" class="btn btn-sm btn-primary" id="view-post">view</a>
                                         <a id="edit-post-{{ $post->id }}" href="{{ route('post.edit', $post->id) }}" class="btn btn-sm btn-primary">edit</a>
 
                                         @csrf
